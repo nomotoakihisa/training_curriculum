@@ -9,11 +9,19 @@
 
 <div class=calendar>
   <% @week_days.each do |day| %>
+<<<<<<< HEAD
+    <div class='item'>
+      <div class='date'>
+        <% day[:month] %>/<% day[:date] %><% day[:wday]%><%= %>
+      </div>
+      <ul class='content'>
+=======
   <div class='item'>
     <div class='date'>
       <%= day[:month] %>/<%= day[:date] %><%= day[:wday] %>
     </div>
     <ul class='content'>
+>>>>>>> e4c04b9285c4b4290f7f394f737f09ec4904dd1f
       <% if day[:plans].length != 0 %>
       <% day[:plans].each do |plan| %>
       <li class='plan-list'>・<%= plan %></li>

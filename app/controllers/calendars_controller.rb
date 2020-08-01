@@ -35,7 +35,11 @@ class CalendarsController < ApplicationController
       plan = @plans.map do |plan|
         plans.push(plan.plan) if plan.date == @todays_date + x
       end
+<<<<<<< HEAD
+      days = { month:  (@todays_date + x).month, date:(@todays_date+x).day, plans: plans}
+=======
       days = { month: (@todays_date + x).month, date: (@todays_date+x).day, plans: plans}
+>>>>>>> e4c04b9285c4b4290f7f394f737f09ec4904dd1f
       @week_days.push(days)
     end
 
